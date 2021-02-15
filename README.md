@@ -33,13 +33,13 @@ individuals - from [oel](https://oureverydaylife.com/mutual-friend-mean-10031289
 
 ## Live Demo
 
-TBA
+[Click here](https://ror-friendship.herokuapp.com/)
 
 ## Getting Started
 
 - Clone the repo `https://github.com/abeidahmed/ror-social-scaffold.git`
 - `cd` into the project
-- Run `git pull origin friendship-v1`
+- Run `git pull origin master`
 - Run `bundle install`
 - Setup your `db` in the `database.yml` and run `rails db:setup`
 - Run `rails s` and visit `localhost:3000`
@@ -66,7 +66,13 @@ To make sure the linters' checks using Github Actions work properly, you should 
 
 ### Deployment
 
-TBA
+This project is hosted on heroku.
+
+- `heroku create your_site_name`
+- `git push heroku master`
+
+> You do not need to run the `rails s` or `migrate` the `db`. The `Procfile` located in the root directory
+> automatically does this for you. Feel free to add more commands such as `sidekiq` if you are running one.
 
 ## Authors
 
